@@ -1,4 +1,4 @@
-﻿string [] arr = { "qwe", "asdasd", "zxczxc", "nbv"};
+﻿string [] arr = { "qwe", "asdasd", "zxczxc", "nbv", ":)", "( ͡° ͜ʖ ͡°)", "ಠ_ಠ"};
 
 void PrintArray(string [] array)
 {
@@ -6,8 +6,10 @@ void PrintArray(string [] array)
 
     for (int i = 0;  i < count ; i++)
     {
-        Console.Write(n);
-        Console.WriteLine($"{array[i] }");
+        int n = arr[i].Length;
+        if (n < 4){
+            Console.WriteLine($"{array[i] }");
+        }
     }
     Console.WriteLine();
 }
